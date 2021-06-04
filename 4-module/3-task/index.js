@@ -1,15 +1,16 @@
 function highlight(table) {
+
   for (let i = 0; i < table.rows.length; i++) {
     let row = table.rows[i];
     for (let i = 0; i < row.cells.length; i++) {
       let cell = row.cells[i];
       if(cell.dataset.available === 'true'){
         row.classList.add('available');
-        console.log('available')
+        //console.log('available')
       }
       else if(cell.dataset.available === 'false'){
         row.classList.add('unavailable');
-        console.log('unavailable')
+        //console.log('unavailable')
       }
     }
     
@@ -17,10 +18,10 @@ function highlight(table) {
       let cell = row.cells[1];
       if(cell.innerHTML < 18){
         row.setAttribute('style', "text-decoration: line-through");
-        console.log('less')
+        //console.log('less')
       }
       else{
-        console.log('more')
+        //console.log('more')
       }
     }
 
@@ -38,4 +39,5 @@ function highlight(table) {
       row.setAttribute('hidden', true);
     }
   }
+
 }

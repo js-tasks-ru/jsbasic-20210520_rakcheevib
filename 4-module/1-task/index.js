@@ -1,5 +1,6 @@
 function makeFriendsList(friends) {
   // ваш код...
+
   const htmlBody = document.querySelector('body');
   htmlBody.insertAdjacentHTML('afterbegin', '<ul></ul>');
   const htmlUl = document.querySelector('ul');
