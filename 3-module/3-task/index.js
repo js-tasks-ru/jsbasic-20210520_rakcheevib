@@ -1,3 +1,5 @@
 function camelize(str) {
-  // ваш код...
+  return str.toLowerCase().replace(/-(.)/g, function(match, str1) {
+    return str1.toUpperCase();
+});
 }

@@ -1,3 +1,8 @@
 function namify(users) {
-  // ваш код...
+  let names = [];
+
+for (const item of users){
+names.push(`${item.name}`)
+}
+return names
 }

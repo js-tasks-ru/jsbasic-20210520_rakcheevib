@@ -1,3 +1,6 @@
 function truncate(str, maxlength) {
-  // ваш код...
+  if(str.length > maxlength){
+    str = str.substr(0, maxlength).replace(/.$/,"…");
+  }
+  return str
 }
